@@ -1,0 +1,297 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #2d3436 0%, #000000 74%);
+  animation-name: slideRight;
+  animation-duration: 1s;
+}
+
+h1,h2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.25rem;
+  color: #ff8200;
+}
+
+h2 {
+  font-family: 'Architects Daughter', cursive;
+  padding-bottom: 0.5rem;
+  margin-top: 6rem;
+}
+
+.heading h2 {
+  color: #ffffffc2;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0rem;
+}
+
+p {
+  color: white;
+}
+
+.heading {
+  padding: 3rem 0;
+}
+
+.center p {
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+
+.navbar-nav a {
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+  }
+
+  /* Top Top Link */
+.toTop {
+  color:#ff8200;
+  display: block;
+  text-align: center;
+  margin: 3rem;
+}
+
+.toTop:hover {
+  color: white;
+}
+
+/* Social icons */
+.social-icons {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.466);
+  padding-bottom: 2rem;
+  margin-top: 8rem;
+}
+
+.social-icons a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.social-icons .fb:hover {
+    color: #4267B2;
+}
+
+.social-icons .insta:hover {
+    color: #C13584;
+}
+
+.social-icons .email:hover {
+    color: #fbbc05;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.466);
+    padding-bottom: 2rem;
+}
+
+/* Images */
+
+#claussenImg {
+  width: 40%;
+  max-height: 380px;
+}
+
+#shillImg {
+  width: 30%;
+  max-height: 380px;
+}
+
+#snappleImg {
+  width: 40%;
+  max-height: 380px;
+}
+
+/* Discography Divs */
+
+.adamClaussenQuintet h2 {
+  text-decoration: underline;
+  margin-top: 2rem;
+}
+
+.mattShill {
+  margin-top: 10%;
+}
+
+.mattShill h2 {
+  text-decoration: underline;
+}
+
+.butterflySnapple {
+  margin-top: 10%;
+}
+
+.butterflySnapple h2 {
+  text-decoration: underline;
+}
+
+.diegoMelgar {
+  margin-top: 10%;
+  text-decoration: underline;
+}
+
+.diegoMelgar iframe {
+  max-width: 400px;
+}
+
+.jacksonPotter {
+  margin-top: 10%;
+  text-decoration: underline;
+}
+
+
+.andreBernier {
+  margin-top: 10%;
+  text-decoration: underline;
+}
+
+.bryanDubrow {
+  margin-top: 10%;
+  text-decoration: underline;
+}
+
+
+/* FlexBox */
+
+.Claussen {
+  display: flex;
+  justify-content: center;
+}
+
+.Shill {
+  display: flex;
+  justify-content: center;
+}
+
+.Snapple {
+  display: flex;
+  justify-content: center;
+}
+
+/* Audio */
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+audio:hover {
+  transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);
+}
+
+iframe:hover {
+  transform: scale(1.1);filter: drop-shadow(2px 3px 3px #333);
+}
+
+/* Animations */
+ @keyframes slideRight {
+   from {transform: translateX(-500px);}
+   to {transform: translateX(0px)}
+ }
+
+/* Media Queries */
+@media (max-width: 1100px) {
+  #claussenImg {
+    width: 60%;
+}
+
+  #shillImg {
+    width: 40%;
+}
+
+  #snappleImg {
+    width: 60%;
+}
+}
+
+@media (max-width: 900px) {
+  .Claussen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Shill {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.Snapple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#claussenImg {
+  width: 60%;
+}
+
+#shillImg {
+  width: 50%;
+}
+
+#snappleImg {
+  width: 60%;
+}
+
+iframe {
+  width: 400px;
+}
+}
+
+@media (max-width: 750px) {
+  iframe {
+    width: 300px;
+  }
+
+    #claussenImg {
+  width: 77%;
+}
+
+#shillImg {
+  width: 77%;
+}
+
+#snappleImg {
+  width: 77%;
+}
+}
+
+@media (max-width: 675px) {
+  iframe {
+    width: 250px;
+  }
+
+  audio {
+    width: 250px;
+  }
+
+  h2 {
+    margin-top: 8rem;
+  }
+
+  .jacksonPotter {
+  margin-top: 8rem
+}
+
+.diegoMelgar {
+  margin-top: 8rem
+}
+
+.andreBernier {
+  margin-top: 8rem
+}
+
+.bryanDubrow {
+  margin-top: 8rem
+}
+}

@@ -1,0 +1,155 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #2d3436 0%, #000000 74%);
+}
+
+.heading {
+  padding: 3rem 0;
+}
+
+h1,h2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.25rem;
+    color: #ff8200;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 3rem;
+}
+
+h3 {
+    margin-bottom: 2rem;
+}
+
+.navbar-nav a {
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+  }
+
+   .toTop {
+      color:#ff8200;
+      display: block;
+      text-align: center;
+      margin: 3rem;
+  }
+
+  .toTop:hover {
+      color: white;
+  }
+
+  .social-icons {
+     text-align: center;
+    color: rgba(255, 255, 255, 0.466);
+    padding-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+.social-icons a {
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons .fb:hover {
+    color: #4267B2;
+}
+
+.social-icons .insta:hover {
+    color: #C13584;
+}
+
+.social-icons .email:hover {
+    color: #fbbc05;
+}
+
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.466);
+    padding-bottom: 2rem;
+}
+
+img {
+    width: 35vw;
+}
+
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    animation-name: slideTop;
+    animation-duration: 1s;
+}
+
+.contact-title {
+    color: white;
+    text-transform: uppercase;
+}
+
+.form-control {
+   background: transparent; 
+   border: none;
+   outline: none;
+   border-bottom: 1px solid gray;
+   color: white;
+   font-size: 1.25rem;
+}
+
+.form-control:focus {
+    background: transparent;
+    outline: transparent;
+    color: white;
+}
+
+.form-control:active {
+    background: transparent;
+    outline: transparent;
+    color: white;
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background-color: #ff8200;
+    border-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+}
+
+form .submit:hover {
+    background-color: white;
+    color: #ff8200;
+    cursor: pointer;
+}
+
+
+@keyframes slideTop {
+    from {transform: translateY(500px);}
+    to {transform: translateY(0px);}
+}
+
+@media (max-width: 800px) {
+    .form {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    img {
+        margin-top: 4rem;
+        width: 50%;
+    }
+}
+
+
+
