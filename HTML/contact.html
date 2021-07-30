@@ -26,7 +26,6 @@
 <body>
 
     <nav id="headerNav" class="navbar navbar-dark navbar-expand-md">
-        <!-- <span class="navbar-brand mb-0 h1"><img src="../images/drum-set-cartoon-variant.svg" id="icon"></span> -->
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#expandMe">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,16 +54,16 @@
                     <h3>For booking and inquiries</h3>
                 </div>
                 <div class="contact-form">
-                    <form id="contact-form" method="post" action="">
+                    <form id="contact-form" method="post" action="../mail.php">
                         <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
 
-                        <input name="name" type="email" class="form-control" placeholder="Your Email" required><br>
+                        <input name="mailFrom" type="email" class="form-control" placeholder="Your Email" required><br>
 
-                        <input name="name" type="text" class="form-control" placeholder="Subject" required><br>
+                        <input name="subject" type="text" class="form-control" placeholder="Subject" required><br>
 
                         <textarea name="message" class="form-control" placeholder="Message" rows="5"
                             required></textarea><br>
-                        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                        <input type="submit" name="submit" class="form-control submit" value="SEND MESSAGE">
 
                     </form>
                 </div>
@@ -85,18 +84,11 @@
     <footer> <small> Zander Ambrose Music &copy; Copyright 2021</small> </footer>
 
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
 </body>
 
 </html>
